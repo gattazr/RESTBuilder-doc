@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>records &mdash; RESTBuilder 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RESTBuilder 0.0.1 documentation" href="../index.html"/>
+        <link rel="up" title="models" href="restbuilder.models.html"/>
+        <link rel="next" title="utils" href="restbuilder.models.utils.html"/>
+        <link rel="prev" title="record" href="restbuilder.models.record.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> RESTBuilder
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user/getting_started.html#cohorte">Cohorte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/getting_started.html#retrieve-restbuilder">Retrieve RESTBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/getting_started.html#configure-restbuilder">Configure RESTBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/getting_started.html#run-the-api">Run the API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user/architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/model.html">Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user/model.html#facilities">Facilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/model.html#records">Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/model.html#tabledefinitions">TableDefinitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user/view.html">View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/controller.html">Controller</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developper documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development environment</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev/doc.html">Sources documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="restbuilder.html">restbuilder</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="restbuilder.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="restbuilder.controllers.html">controllers</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="restbuilder.models.html">models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="restbuilder.views.html">views</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="restbuilder.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="restbuilder.database.html">database</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="restbuilder.html#module-restbuilder">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About RESTBuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id1">0.1.0 (2015-08-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id2">0.0.1 (2015-08-06)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../evolutions.html">Future Evolutions</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">RESTBuilder</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../dev/doc.html">Sources documentation</a> &raquo;</li>
+      
+          <li><a href="restbuilder.html">restbuilder</a> &raquo;</li>
+      
+          <li><a href="restbuilder.models.html">models</a> &raquo;</li>
+      
+    <li>records</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/restbuilder/restbuilder.models.records.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="module-restbuilder.models.records">
+<span id="records"></span><h1>records<a class="headerlink" href="#module-restbuilder.models.records" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">authors:</th><td class="field-body">Rémi GATTAZ</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">Copyright 2015, IsandlaTech</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">license:</th><td class="field-body">Apache Software License 2.0</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="restbuilder.models.records.Records">
+<em class="property">class </em><code class="descclassname">restbuilder.models.records.</code><code class="descname">Records</code><a class="headerlink" href="#restbuilder.models.records.Records" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Handler of the classes mapping the database</p>
+<dl class="method">
+<dt id="restbuilder.models.records.Records.getRecordClass">
+<code class="descname">getRecordClass</code><span class="sig-paren">(</span><em>aClassName</em><span class="sig-paren">)</span><a class="headerlink" href="#restbuilder.models.records.Records.getRecordClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the record class associated to the name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aClassName</strong> &#8211; name of the record class to retrieve</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Record classe</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="restbuilder.models.records.Records.registerRecordClass">
+<code class="descname">registerRecordClass</code><span class="sig-paren">(</span><em>aRecordClass</em><span class="sig-paren">)</span><a class="headerlink" href="#restbuilder.models.records.Records.registerRecordClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a Record class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aRecordClass</strong> &#8211; Class Record to add</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="restbuilder.models.records.Records.unregisterRecordClass">
+<code class="descname">unregisterRecordClass</code><span class="sig-paren">(</span><em>aRecordClassName</em><span class="sig-paren">)</span><a class="headerlink" href="#restbuilder.models.records.Records.unregisterRecordClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a Record class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aRecordClassName</strong> &#8211; Name of the Class Record to remove</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="restbuilder.models.utils.html" class="btn btn-neutral float-right" title="utils" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="restbuilder.models.record.html" class="btn btn-neutral" title="record" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Isandlatech.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

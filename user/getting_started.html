@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; RESTBuilder 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RESTBuilder 0.0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Software Architecture" href="architecture.html"/>
+        <link rel="prev" title="RESTBuilder" href="../index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> RESTBuilder
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cohorte">Cohorte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieve-restbuilder">Retrieve RESTBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-restbuilder">Configure RESTBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-api">Run the API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model.html">Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model.html#facilities">Facilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#records">Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#tabledefinitions">TableDefinitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="view.html">View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controller.html">Controller</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developper documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/doc.html">Sources documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../restbuilder/restbuilder.html">restbuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../restbuilder/restbuilder.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../restbuilder/restbuilder.controllers.html">controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../restbuilder/restbuilder.models.html">models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../restbuilder/restbuilder.views.html">views</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../restbuilder/restbuilder.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../restbuilder/restbuilder.database.html">database</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../restbuilder/restbuilder.html#module-restbuilder">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About RESTBuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id1">0.1.0 (2015-08-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id2">0.0.1 (2015-08-06)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../evolutions.html">Future Evolutions</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">RESTBuilder</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Getting started</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/user/getting_started.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This document will explain how to setup an envionment to use RESTBuilder.</p>
+<p>If you already have Cohorte installed and a node created, skip ahead to
+<a class="reference internal" href="#retrieve-restbuilder"><span>Retrieve RESTBuilder</span></a>.</p>
+<div class="section" id="cohorte">
+<h2>Cohorte<a class="headerlink" href="#cohorte" title="Permalink to this headline">¶</a></h2>
+<p>RESTBuilder was designed to run on <a class="reference external" href="http://cohorte.github.io/">Cohorte</a>. So beforehand, you need to <a class="reference external" href="http://cohorte.github.io/docs/1.1/setup/">install it</a>.</p>
+<p>Once it is installed, create a node. To do so, open a shell and execute the following command :</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cohorte-create-node -a &lt;app-id&gt; -n &lt;node-name&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="retrieve-restbuilder">
+<span id="id1"></span><h2>Retrieve RESTBuilder<a class="headerlink" href="#retrieve-restbuilder" title="Permalink to this headline">¶</a></h2>
+<p>Now that a node is created, we will get the dependencies and RESTBuilder.</p>
+<p>The only dependency RESTBuilder has is <a class="reference external" href="http://www.sqlalchemy.org/">SQLAlchemy</a>. You need to retrieve the package and place it
+into the folder &#8220;repo&#8221; in the node. There are several ways to do this :</p>
+<p><strong>With virtualenv and pip (Recomended) :</strong></p>
+<p>First, you need to create a virtualenv. You will need to keep this environment so I advise
+you to place it next to the node folder.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>virtualenv env
+</pre></div>
+</div>
+<p>Now that is created, you need to activate it. To do so, execute the following command :</p>
+<div class="highlight-bash"><div class="highlight"><pre>$ source env/bin/activate
+(env) $
+</pre></div>
+</div>
+<p>You should see (env) appear just before the $ in your prompt. It indicates that the virtualenv
+called &#8216;env&#8217; is activated. You will need to activate it everytime you want to run the
+application. To deactivate it, juste use the command &#8220;deactivate&#8221;.</p>
+<p>With the virtualenv activated, you have access to pip. With it, you will download the package
+SQLAlechemy.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="o">(</span>env<span class="o">)</span> <span class="nv">$ </span>pip install sqlalechemy
+</pre></div>
+</div>
+<p>With this command, you will download sqlalchemy along with all its dependencies. Since it
+doesn&#8217;t have any, the list of the installed packages should be the following :</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="o">(</span>env<span class="o">)</span> <span class="nv">$ </span>pip list
+pip <span class="o">(</span>7.1.0<span class="o">)</span>
+setuptools <span class="o">(</span>18.0.1<span class="o">)</span>
+SQLAlchemy <span class="o">(</span>1.0.8<span class="o">)</span>
+wheel <span class="o">(</span>0.24.0<span class="o">)</span>
+</pre></div>
+</div>
+<p><strong>With PyPi :</strong></p>
+<p>On <a class="reference external" href="https://pypi.python.org/pypi/">PiPy</a>, you can download the package sqlalchemy directly. Since it doesn&#8217;t have any
+dependencies, if you place the downloaded package in the folder &#8220;repo&#8221; of the node, the
+dependency to SQLAlchemy will be satisfied.</p>
+<p>You can download a tar.gz containing the package on <a class="reference external" href="https://pypi.python.org/pypi/SQLAlchemy">this page</a>. The folder to copy into &#8220;repo&#8221; is the folder
+lib/sqlalchemy in the archive.</p>
+</div>
+<div class="section" id="configure-restbuilder">
+<h2>Configure RESTBuilder<a class="headerlink" href="#configure-restbuilder" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have everything to run the cohorte node, you will need to configure it.</p>
+<p>First, open the file &lt;node&gt;/conf/run.js. Here is the configuration you should match :</p>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;node&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;shell-port&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;http-port&quot;</span><span class="p">:</span> <span class="mi">9000</span><span class="p">,</span>
+        <span class="nt">&quot;top-composer&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;node-name&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;app-id&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;app-id&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cohorte-version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;transport-http&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;http-ipv&quot;</span><span class="p">:</span> <span class="mi">6</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;transport&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;http&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The param &lt;app-id&gt; and &lt;node-name&gt; should be the value you gave earlier to the command
+cohorte-create-node. To match this configuration, the only parameters you should have to changer are
+&#8220;top-composer&#8221; and &#8220;http-port&#8221;.</p>
+<p>The value of &#8220;http-port&#8221; can be any port you wish. It is on that port that the webadmin will be
+available.</p>
+<p>Then, open the file &lt;node&gt;/conf/composition.js. If this file doesn&#8217;t exist, create it and place the following in it :</p>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;app-id&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;composition-name&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;components&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;RESTBuilder-database&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;factory&quot;</span> <span class="p">:</span> <span class="s2">&quot;restbuilder.database_factory&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;isolate&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;isolate-name&gt;&quot;</span>
+            <span class="p">}</span>
+            <span class="p">,{</span>
+                <span class="nt">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;RESTBuilder-records&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;factory&quot;</span> <span class="p">:</span> <span class="s2">&quot;restbuilder.records_factory&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;isolate&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;isolate-name&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Now, you will need to create the file &lt;node&gt;/conf/&lt;isolate-name&gt;.js. It will contains
+customisation settings for the isolate called &lt;isolate-name&gt;.</p>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;composition&quot;</span> <span class="p">:</span> <span class="p">[</span> <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;pelix-http-service&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;properties&quot;</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;pelix.http.port&quot;</span> <span class="p">:</span> <span class="mi">5000</span>
+        <span class="p">}</span>
+        <span class="p">}</span> <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>With these settings, the API will be available on the port 5000 of the computer running this node.</p>
+<p>Finally, you will need to setup the database settings. To do this, create the file
+&lt;node&gt;/conf/restbuilder/database.js. You will need prior to this to create the folder restbuilder.
+Make sure the name is in lowercase</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">make the file database.js</p>
+</div>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="run-the-api">
+<h2>Run the API<a class="headerlink" href="#run-the-api" title="Permalink to this headline">¶</a></h2>
+<p>Now the only thing left to do is to start the API. To do so, you only need to execute the script
+run (or run.bat if you are on windows) at the root of the node.</p>
+<p>If you used virtualenv and pip to manage REScBuilder&#8217;s dependencies, do not forget to activate the
+environment before executing this script.</p>
+<div class="highlight-bash"><div class="highlight"><pre>(env) $ ./run
+
+   _____ ____  _    _  ____  _____ _______ ______
+  / ____/ __ \| |  | |/ __ \|  __ \__   __|  ____|
+ | |   | |  | | |__| | |  | | |__) | | |  | |__
+ | |   | |  | |  __  | |  | |  _  /  | |  |  __|
+ | |___| |__| | |  | | |__| | | \ \  | |  | |____
+  \_____\____/|_|  |_|\____/|_|  \_\ |_|  |______|
+
+
+     APPLICATION ID : RESTBuilder
+          NODE NAME : RESTBuilder
+         TRANSPORTS : http
+
+       TOP COMPOSER : True
+
+          HTTP PORT : 9000
+         SHELL PORT : 0
+
+   COMPOSITION FILE : composition.js
+         AUTO START : True
+
+
+       COHORTE BASE : ~/RESTBuilder
+       COHORTE BASE : ~/RESTBuilder
+       COHORTE HOME : /opt/isandlatech/cohorte
+ PYTHON INTERPRETER : python
+           LOG FILE : ~/RESTBuilder
+
+
+** Pelix Shell prompt **
+$
+</pre></div>
+</div>
+<p>In the webadmin, you should then see the components <em>RESTBuilder-database</em> and <em>RESTBuilder-records</em>
+in an isolate. The webadmin is accessible on the servlet /webadmin and the port &#8220;http-port&#8221; you set
+earlier on the machine running the node.</p>
+<div class="align-center figure">
+<img alt="Webadmin" src="../_images/getting_started_webadmin.png" />
+</div>
+<p>If this is running correctly, you can now go the next section and start developping your API.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="architecture.html" class="btn btn-neutral float-right" title="Software Architecture" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="RESTBuilder" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Isandlatech.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
